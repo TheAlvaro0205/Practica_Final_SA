@@ -1,0 +1,30 @@
+# Utilizamos una imagen base de PHP con Apache
+FROM php:7.4-apache
+
+# Instalamos las dependencias de PHP necesarias para tu aplicación
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Instalamos git y MySQL client
+RUN apt-get update && apt-get install -y git default-mysql-client
+
+# Clonamos el repositorio de GitHub dentro del directorio de trabajo en el contenedor
+RUN git clone https://github.com/TheAlvaro0205/Practica_Final_SA.git /var/www/html/
+
+# Configuramos Apache para servir la aplicación
+RUN chown -R www-data:www-data /var/www/html/
+RUN a2enmod rewrite
+
+# Exponemos el puerto 80 para que pueda ser accesible desde fuera del contenedor
+EXPOSE 80
+
+# Definimos variables de entorno para la conexión a la base de datos MySQL
+ENV MYSQL_HOST=nombre_de_host \
+    MYSQL_DATABASE=login \
+    MYSQL_USER=nombre_de_usuario \
+    MYSQL_PASSWORD=contraseña_de_usuario
+
+# Creamos el directorio /docker-entrypoint-initdb.d/ y luego creamos el archivo SQL dentro de él
+RUN mkdir -p /docker-entrypoint-initdb.d/ && echo "CREATE TABLE ejemplo (id INT AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(255));" > /docker-entrypoint-initdb.d/create_table.sql
+
+# Iniciamos Apache al iniciar el contenedor
+CMD ["apache2-foreground"]
