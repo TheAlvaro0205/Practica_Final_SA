@@ -1,0 +1,4870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Informes de Escaneo al localhost</title>
+<link
+	href="2024-04-18-ZAP-Report-2/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2024-04-18-ZAP-Report-2/themes/original/main.css" rel="stylesheet">
+<link
+	href="2024-04-18-ZAP-Report-2/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Informes de Escaneo al localhost</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2024-04-18-ZAP-Report-2/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on jue 18 abr 2024, at 17:27:42</span>
+		</p>
+		<p>ZAP Version: 2.14.0</p>
+		<p>
+			ZAP is supported by the <a href="https://crashoverride.com/?zap=rep">Crash Override Open Source Fellowship</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-3-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Alto</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alta</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Baja</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alta</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(5)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alta</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Baja</span> <span>(2)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">Alto</span>, <span class="risk-level">Medio</span>, <span class="risk-level">Bajo</span>, <span class="risk-level">Informativo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">Confirmado por Usuario</span>, <span class="confidence-level">Alta</span>, <span class="confidence-level">Media</span>, <span class="confidence-level">Baja</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">Confirmado por Usuario</span>, <span class="confidence-level">Alta</span>, <span class="confidence-level">Media</span>, <span class="confidence-level">Baja</span>, <span class="confidence-level">Falso positivo</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">Confirmado por Usuario</th>
+							<th scope="col">Alta</th>
+							<th scope="col">Media</th>
+							<th scope="col">Baja</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">Alto</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(6,7 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medio</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(20,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Bajo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(33,3 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>6</span><br> <span class="additional-info-percentages">(40,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informativo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(33,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(26,7 %)</span></td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(53,3 %)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+							<td><span>15</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>Alto</span><br>  <span
+									class="additional-info-percentages">(= Alto)</span>  
+							</th>
+							<th scope="col">
+								<span>Medio</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medio)</span> 
+							</th>
+							<th scope="col">
+								<span>Bajo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Bajo)</span> 
+							</th>
+							<th scope="col">
+								<span>Informativo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informativo)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost</th>
+							
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(10)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(15)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Inyección SQL</a></th>
+							<td class="risk-level">Alto</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Ausencia de Ttokens Anti-CSRF</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(26,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Cabecera Content Security Policy (CSP) no configurada</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(66,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Falta de cabecera Anti-Clickjacking</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(46,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Cookie sin el atributo SameSite</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(46,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Gran redirección detectada (posible fuga de información confidencial)</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>22</span><br> <span
+								class="additional-info-percentages">(146,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>19</span><br> <span
+								class="additional-info-percentages">(126,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">Amplia gama de Cookies</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-11">Modern Web Application</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-12">Petición de Autenticación Identificada</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-13">Respuesta de Gestión de Sesión Identificada</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-14">User Controllable HTML Element Attribute (Potential XSS)</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>15</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-3-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Alto</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Inyección SQL</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/SEC/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Inyección SQL puede ser posible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Los resultados de la página se manipularon con éxito utilizando las condiciones booleanas [zaproxy@example.com&#39; AND &#39;1&#39;=&#39;1&#39; -- ] y [zaproxy@example.com&#39; AND &#39;1&#39;=&#39;2&#39; -- ]</p>
+
+<p>El valor del parámetro que está modificado fue NOT  eliminado de la salida HTML para fines de la comparación</p>
+
+<p>Se han devuelto datos para el parámetro original.</p>
+
+<p>Se ha detectado la vulnerabilidad al restringir con éxito los datos devueltos originalmente, al manipular el parámetro</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (389 bytes)</summary>
+				
+				<pre><code>POST http://localhost/SEC/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/SEC/login.php
+content-length: 96
+Cookie: PHPSESSID=hbgjcopnelnbrmupte5a7ee4mr
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (96 bytes)</summary>
+				
+				<pre><code>email=zaproxy%40example.com%27+AND+%271%27%3D%271%27+--+&amp;password=ZAP&amp;remember_me=on&amp;login=Login</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (332 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Thu, 18 Apr 2024 04:08:50 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+location: home.php
+Content-Length: 825
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (825 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Login&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style1.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;form-box box&quot;&gt;
+
+        &lt;/div&gt;
+  &lt;script&gt;
+    const toggle = document.querySelector(&quot;.toggle&quot;),
+      input = document.querySelector(&quot;.password&quot;);
+    toggle.addEventListener(&quot;click&quot;, () =&gt; {
+      if (input.type === &quot;password&quot;) {
+        input.type = &quot;text&quot;;
+        toggle.classList.replace(&quot;fa-eye-slash&quot;, &quot;fa-eye&quot;);
+      } else {
+        input.type = &quot;password&quot;;
+      }
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>email</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>zaproxy@example.com&#39; AND &#39;1&#39;=&#39;1&#39; -- </code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>No confíe en los datos de entrada del lado del cliente, incluso si existe una validación del lado del cliente.</p>
+
+<p>Como norma general, escriba la verificación de los datos en el lado del servidor.</p>
+
+<p>Si la aplicación usa JDBC, use PreparedStatement o CallableStatement, con parámetros pasados ​​por &#39;?&#39;</p>
+
+<p>Si la aplicación usa ASP, use objetos de comando ADO con verificación de tipo fuerte y consultas parametrizadas.</p>
+
+<p>Si se pueden usar los procedimientos almacenados de la base de datos, utilícelos.</p>
+
+<p>¡*No* concatene cadenas en consultas en el procedimiento almacenado, o use &#39;exec&#39;, &#39;exex immediate&#39; o una función equivalente!</p>
+
+<p>No cree consultas SQL dinámicas mediante la concatenación de cadenas simples.</p>
+
+<p>Escape todos los datos recibidos del cliente.</p>
+
+<p>Aplique una &#39;lista de permitidos&#39; para caracteres permitidos o una &#39;lista de denegados&#39; para caracteres no permitidos en la entrada del usuario.</p>
+
+<p>Aplique el principio de privilegio mínimo utilizando el usuario de base de datos con el menor privilegio posible.</p>
+
+<p>En particular, evite utilizar usuarios de bases de datos &#39;sa&#39; o &#39;db-owner&#39;. Esto no elimina la inyección SQL, pero minimiza su impacto.</p>
+
+<p>Otorgue el acceso mínimo a la base de datos que sea necesario para la aplicación.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alta</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Cabecera Content Security Policy (CSP) no configurada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La Política de seguridad de contenido (CSP) es una capa adicional de seguridad que ayuda a detectar y mitigar ciertos tipos de ataques, incluidos Cross Site Scripting (XSS) y ataques de inyección de datos. Estos ataques se utilizan para todo, desde el robo de datos hasta la desfiguración del sitio o la distribución de malware. CSP proporciona un conjunto de encabezados HTTP estándar que permiten a los propietarios de sitios web declarar fuentes de contenido aprobadas que los navegadores deberían poder cargar en esa página; los tipos cubiertos son JavaScript, CSS, marcos HTML, fuentes, imágenes y objetos incrustados como applets de Java, ActiveX, archivos de audio y video.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (230 bytes)</summary>
+				
+				<pre><code>GET http://localhost/sitemap.xml HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que su servidor web, servidor de aplicaciones, balanceador de carga, etc. esté configurado para establecer la cabecera Content-Security-Policy.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Falta de cabecera Anti-Clickjacking</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/SEC/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La respuesta no incluye Content-Security-Policy con la directiva &#39;frame-ancestors&#39; ni X-Frame-Options para proteger contra ataques de &#39;ClickJacking&#39;.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (254 bytes)</summary>
+				
+				<pre><code>GET http://localhost/SEC/ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/SEC
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (201 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Content-Type: text/html; charset=UTF-8
+content-length: 15695
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (15695 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Homepage&lt;/title&gt;
+
+    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;
+        integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot; crossorigin=&quot;anonymous&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;!-- navbar section   --&gt;
+
+    &lt;header class=&quot;navbar-section&quot;&gt;
+        &lt;nav class=&quot;navbar navbar-expand-lg&quot;&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;bi bi-chat&quot;&gt;&lt;/i&gt; Brag Spot&lt;/a&gt;
+                &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot;
+                    aria-controls=&quot;navbarNav&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
+                    &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; aria-current=&quot;page&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#services&quot;&gt;services&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#about&quot;&gt;about us&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#projects&quot;&gt;projects&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#contact&quot;&gt;contact&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;login.php&quot;&gt;login&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;signup.php&quot;&gt;signup&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;!-- hero section  --&gt;
+
+    &lt;section id=&quot;home&quot; class=&quot;hero-section&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-4 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h1&gt;the digital service you really want&lt;/h1&gt;
+                    &lt;p&gt;We build effective strategies to help you reach customers and prospects across the entire web.
+                    &lt;/p&gt;
+                    &lt;button class=&quot;btn&quot;&gt;&lt;a href=&quot;#&quot;&gt;Estimate Project&lt;/a&gt;&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-8 col-md-12 col-sm-12&quot;&gt;
+                    &lt;img src=&quot;images/hero-image.png&quot; alt=&quot;&quot; class=&quot;img-fluid&quot;&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- services section  --&gt;
+
+    &lt;section class=&quot;services-section&quot; id=&quot;services&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 services&quot;&gt;
+
+                    &lt;div class=&quot;row row1&quot;&gt;
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/research.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Research&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;We build effective strategies to help you reach customers
+                                        and
+                                        prospects
+                                        across the entire.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/brand.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Branding&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;Brand identity represents the visual elements and assets
+                                        that
+                                        distinguish a brand.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;row row2&quot;&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/ux.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;UI/UX Design&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;UI/UX design services focus on creating intuitive &amp;
+                                        user-centric
+                                        interfaces for digital products.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/app-development.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Development&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;A concept is brought to life through the services various
+                                        stages, such
+                                        as planning, testing and deployment.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h3&gt;services&lt;/h3&gt;
+                    &lt;h1&gt;We can help you solve your problem through our service.&lt;/h1&gt;
+                    &lt;p&gt;We are a brand strategy &amp; digital design agency building brands that matter in culture with more
+                        than ten years of experience.&lt;/p&gt;
+                    &lt;button class=&quot;btn&quot;&gt;Explore Services&lt;/button&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- about section  --&gt;
+
+    &lt;section class=&quot;about-section&quot; id=&quot;about&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12&quot;&gt;
+                    &lt;img src=&quot;images/about.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h3&gt;who we are&lt;/h3&gt;
+                    &lt;h1&gt;Providing creative and technology services for growing brands.&lt;/h1&gt;
+
+                    &lt;p&gt;Our company specializes in research, brand identity design, UI/UX design, development and graphic
+                        design. To help our clients improve their business, we work with them all over the world.&lt;/p&gt;
+                    &lt;button&gt;learn more&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- project section  --&gt;
+
+    &lt;section class=&quot;project-section&quot; id=&quot;projects&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row text&quot;&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12&quot;&gt;
+                    &lt;h3&gt;our works&lt;/h3&gt;
+                    &lt;h1&gt;Our latest project&lt;/h1&gt;
+                    &lt;hr&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12&quot;&gt;
+                    &lt;p&gt;We build product close to our heart. We make your idea to really and make your dream successful
+                        with awesome experience.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row project&quot;&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project1.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;SaaS Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Development. Jan 19,2022&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project2.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;Travel Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;UI/UX Jun 29,2023&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project3.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;Travel Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;UI/UX Aug 9,2021&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project4.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;SaaS Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Development. May 25 ,2022&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- contact section  --&gt;
+
+    &lt;section class=&quot;contact-section&quot; id=&quot;contact&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+
+            &lt;div class=&quot;row gy-4&quot;&gt;
+
+                &lt;h1&gt;contact us&lt;/h1&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+
+                    &lt;div class=&quot;row gy-4&quot;&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-geo-alt&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Address&lt;/h3&gt;
+                                &lt;p&gt;A108 Adam Street,&lt;br&gt;New Delhi, 535022&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-telephone&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Call Us&lt;/h3&gt;
+                                &lt;p&gt;+91 9876545672&lt;br&gt;+91 8763456243&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-envelope&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Email Us&lt;/h3&gt;
+                                &lt;p&gt;bragspot@gmail.com&lt;br&gt;brag@gmail.com&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-clock&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Open Hours&lt;/h3&gt;
+                                &lt;p&gt;Monday - Friday&lt;br&gt;9:00AM - 05:00PM&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-6 form&quot;&gt;
+                    &lt;form action=&quot;contact.php&quot; method=&quot;POST&quot; class=&quot;php-email-form&quot;&gt;
+                        &lt;div class=&quot;row gy-4&quot;&gt;
+
+                            &lt;div class=&quot;col-md-6&quot;&gt;
+                                &lt;input type=&quot;text&quot; name=&quot;name&quot; class=&quot;form-control&quot; placeholder=&quot;Your Name&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-6 &quot;&gt;
+                                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; name=&quot;email&quot; placeholder=&quot;Your Email&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;subject&quot; placeholder=&quot;Subject&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12&quot;&gt;
+                                &lt;textarea class=&quot;form-control&quot; name=&quot;message&quot; rows=&quot;5&quot; placeholder=&quot;Message&quot;
+                                    required&gt;&lt;/textarea&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12 text-center&quot;&gt;
+                                &lt;button type=&quot;submit&quot; name=&quot;submit&quot;&gt;Send Message&lt;/button&gt;
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/form&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- footer section  --&gt;
+
+    &lt;footer&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-3 col-md-12 col-sm-12&quot;&gt;
+                    &lt;p class=&quot;logo&quot;&gt;&lt;i class=&quot;bi bi-chat&quot;&gt;&lt;/i&gt; Brag Spot&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12&quot;&gt;
+                    &lt;ul class=&quot;d-flex&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;services&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;projects&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;about us&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-2 col-md-12 col-sm-12&quot;&gt;
+                    &lt;p&gt;&amp;copy;2023_BragSpot&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-1 col-md-12 col-sm-12&quot;&gt;
+                    &lt;!-- back to top  --&gt;
+
+                    &lt;a href=&quot;#&quot; class=&quot;back-to-top d-flex align-items-center justify-content-center&quot;&gt;&lt;i
+                            class=&quot;bi bi-arrow-up-short&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/footer&gt;
+
+
+
+
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+        integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+        crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Los navegadores web modernos admiten los encabezados HTTP Content-Security-Policy y X-Frame-Options. Asegúrese de que uno de ellos esté configurado en todas las páginas web devueltas por su sitio/aplicación.</p>
+
+<p>Si espera que la página esté enmarcada solo por páginas en su servidor (por ejemplo, es parte de un FRAMESET), querrá usar SAMEORIGIN; de lo contrario, si nunca espera que la página esté enmarcada, debe usar DENY. Alternativamente, considere implementar la directiva &quot;frame-ancestros&quot; de la política de seguridad de contenido.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Baja</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Ausencia de Ttokens Anti-CSRF</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/SEC</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">WSTG-v42-SESS-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>No se encontraron tokens Anti-CSRF en un formulario de envío HTML.</p>
+
+<p>Una solicutud falsa entre sitios en un ataque que compromete y obliga a una víctima a enviar su solicitud HTTP a un destino objetivo sin su conocimiento o intención para poder realizar una acción como víctima. La causa oculta es la funcionalidad de la aplicación utilizando acciones de URL/formulario que pueden ser adivinados de forma repetible. La naturaleza del ataque es que CSRG explota la confianza que un sitio web proporciona a un usuario. Por el contrario, las cadenas de comandos de los sitios cruzados (XSS) explotan la confianza que un usuario proporciona en un sitio web. Al igual que XSS, los ataques CSRG no son de forma necesaria de sitios cruzados, pero hay la posibilidad de que si pueden serlo. La falsificación de las solicitudes ente los sitios también se conoce como CSRF, XSRG, ataques con un solo clic, montaje de sesión, diputado confundido y navegación en alta mar.</p>
+
+<p>Los ataques de CSRG son muy efectivos en varias situaciones, que incluyen:</p>
+
+<p>*La victima tiene una sesión activa en el sitio de destino.</p>
+
+<p>    *La víctima se autoriza por medio de la autenticación HTTP en el sitio de destino.</p>
+
+<p>    *La víctima se encuentra en la misma red local que el sitio de destino.</p>
+
+<p>CSRF se ha utilizado especialmente para poder realizar una acción contra un sitio objetivo utilizando los privilegios de la víctima, pero se han revelado técnicas recientes para difundir información al obtener el acceso a la respuesta. El riesgo de divulgación de información aumenta de forma drástica cuando el sitio de destino se encuentra vulnerable a XSS, porque XSS se puede utilizar como una plataforma para CSRF, lo que le permite al atacante que opere desde adentro de los líites de la misma política de origen.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Ninguna ficha (token) Anti-CSRF [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] fue encontrada en los siguientes formularios HTML: [Form 1: &quot;email&quot; &quot;name&quot; &quot;subject&quot; ].  </p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (222 bytes)</summary>
+				
+				<pre><code>GET http://localhost/SEC HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (201 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Content-Type: text/html; charset=UTF-8
+content-length: 15695
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (15695 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Homepage&lt;/title&gt;
+
+    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;
+        integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot; crossorigin=&quot;anonymous&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;!-- navbar section   --&gt;
+
+    &lt;header class=&quot;navbar-section&quot;&gt;
+        &lt;nav class=&quot;navbar navbar-expand-lg&quot;&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;bi bi-chat&quot;&gt;&lt;/i&gt; Brag Spot&lt;/a&gt;
+                &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot;
+                    aria-controls=&quot;navbarNav&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
+                    &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; aria-current=&quot;page&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#services&quot;&gt;services&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#about&quot;&gt;about us&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#projects&quot;&gt;projects&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#contact&quot;&gt;contact&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;login.php&quot;&gt;login&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;signup.php&quot;&gt;signup&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;!-- hero section  --&gt;
+
+    &lt;section id=&quot;home&quot; class=&quot;hero-section&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-4 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h1&gt;the digital service you really want&lt;/h1&gt;
+                    &lt;p&gt;We build effective strategies to help you reach customers and prospects across the entire web.
+                    &lt;/p&gt;
+                    &lt;button class=&quot;btn&quot;&gt;&lt;a href=&quot;#&quot;&gt;Estimate Project&lt;/a&gt;&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-8 col-md-12 col-sm-12&quot;&gt;
+                    &lt;img src=&quot;images/hero-image.png&quot; alt=&quot;&quot; class=&quot;img-fluid&quot;&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- services section  --&gt;
+
+    &lt;section class=&quot;services-section&quot; id=&quot;services&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 services&quot;&gt;
+
+                    &lt;div class=&quot;row row1&quot;&gt;
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/research.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Research&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;We build effective strategies to help you reach customers
+                                        and
+                                        prospects
+                                        across the entire.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/brand.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Branding&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;Brand identity represents the visual elements and assets
+                                        that
+                                        distinguish a brand.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;row row2&quot;&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/ux.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;UI/UX Design&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;UI/UX design services focus on creating intuitive &amp;
+                                        user-centric
+                                        interfaces for digital products.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/app-development.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Development&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;A concept is brought to life through the services various
+                                        stages, such
+                                        as planning, testing and deployment.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h3&gt;services&lt;/h3&gt;
+                    &lt;h1&gt;We can help you solve your problem through our service.&lt;/h1&gt;
+                    &lt;p&gt;We are a brand strategy &amp; digital design agency building brands that matter in culture with more
+                        than ten years of experience.&lt;/p&gt;
+                    &lt;button class=&quot;btn&quot;&gt;Explore Services&lt;/button&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- about section  --&gt;
+
+    &lt;section class=&quot;about-section&quot; id=&quot;about&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12&quot;&gt;
+                    &lt;img src=&quot;images/about.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h3&gt;who we are&lt;/h3&gt;
+                    &lt;h1&gt;Providing creative and technology services for growing brands.&lt;/h1&gt;
+
+                    &lt;p&gt;Our company specializes in research, brand identity design, UI/UX design, development and graphic
+                        design. To help our clients improve their business, we work with them all over the world.&lt;/p&gt;
+                    &lt;button&gt;learn more&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- project section  --&gt;
+
+    &lt;section class=&quot;project-section&quot; id=&quot;projects&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row text&quot;&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12&quot;&gt;
+                    &lt;h3&gt;our works&lt;/h3&gt;
+                    &lt;h1&gt;Our latest project&lt;/h1&gt;
+                    &lt;hr&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12&quot;&gt;
+                    &lt;p&gt;We build product close to our heart. We make your idea to really and make your dream successful
+                        with awesome experience.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row project&quot;&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project1.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;SaaS Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Development. Jan 19,2022&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project2.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;Travel Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;UI/UX Jun 29,2023&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project3.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;Travel Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;UI/UX Aug 9,2021&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project4.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;SaaS Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Development. May 25 ,2022&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- contact section  --&gt;
+
+    &lt;section class=&quot;contact-section&quot; id=&quot;contact&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+
+            &lt;div class=&quot;row gy-4&quot;&gt;
+
+                &lt;h1&gt;contact us&lt;/h1&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+
+                    &lt;div class=&quot;row gy-4&quot;&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-geo-alt&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Address&lt;/h3&gt;
+                                &lt;p&gt;A108 Adam Street,&lt;br&gt;New Delhi, 535022&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-telephone&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Call Us&lt;/h3&gt;
+                                &lt;p&gt;+91 9876545672&lt;br&gt;+91 8763456243&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-envelope&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Email Us&lt;/h3&gt;
+                                &lt;p&gt;bragspot@gmail.com&lt;br&gt;brag@gmail.com&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-clock&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Open Hours&lt;/h3&gt;
+                                &lt;p&gt;Monday - Friday&lt;br&gt;9:00AM - 05:00PM&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-6 form&quot;&gt;
+                    &lt;form action=&quot;contact.php&quot; method=&quot;POST&quot; class=&quot;php-email-form&quot;&gt;
+                        &lt;div class=&quot;row gy-4&quot;&gt;
+
+                            &lt;div class=&quot;col-md-6&quot;&gt;
+                                &lt;input type=&quot;text&quot; name=&quot;name&quot; class=&quot;form-control&quot; placeholder=&quot;Your Name&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-6 &quot;&gt;
+                                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; name=&quot;email&quot; placeholder=&quot;Your Email&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;subject&quot; placeholder=&quot;Subject&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12&quot;&gt;
+                                &lt;textarea class=&quot;form-control&quot; name=&quot;message&quot; rows=&quot;5&quot; placeholder=&quot;Message&quot;
+                                    required&gt;&lt;/textarea&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12 text-center&quot;&gt;
+                                &lt;button type=&quot;submit&quot; name=&quot;submit&quot;&gt;Send Message&lt;/button&gt;
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/form&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- footer section  --&gt;
+
+    &lt;footer&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-3 col-md-12 col-sm-12&quot;&gt;
+                    &lt;p class=&quot;logo&quot;&gt;&lt;i class=&quot;bi bi-chat&quot;&gt;&lt;/i&gt; Brag Spot&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12&quot;&gt;
+                    &lt;ul class=&quot;d-flex&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;services&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;projects&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;about us&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-2 col-md-12 col-sm-12&quot;&gt;
+                    &lt;p&gt;&amp;copy;2023_BragSpot&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-1 col-md-12 col-sm-12&quot;&gt;
+                    &lt;!-- back to top  --&gt;
+
+                    &lt;a href=&quot;#&quot; class=&quot;back-to-top d-flex align-items-center justify-content-center&quot;&gt;&lt;i
+                            class=&quot;bi bi-arrow-up-short&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/footer&gt;
+
+
+
+
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+        integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+        crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;form action=&quot;contact.php&quot; method=&quot;POST&quot; class=&quot;php-email-form&quot;&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Fase: Arquitectura y Diseño</p>
+
+<p>Utilizar una biblioteca o framework verificado y confiable que evite esta vulnerabilidad o proporcione elementos que faciliten evitarla.</p>
+
+<p>Por ejemplo, utilice el paquete anti-CSRG como el CSRGuard de OWASP.</p>
+
+<p>Fase: Implementación</p>
+
+<p>Asegúrese de que su aplicación esté libre de fallas de secuencias de comandos entre sitios, ya que la mayoría de las defensas de CSRF pueden detenerse por alto por medio del uso de secuencias de comandos manejadas por el atacante.</p>
+
+<p>Fase: Arquitectura y Diseño</p>
+
+<p>Origina un nonce único para cada uno de los formularios, coloque el nonce en el formularo y confirme la independencia al obtener el formulario. Asegúrese de que el nonce no sea predecible (CWE-330).</p>
+
+<p>Usted tiene que tener en cuenta que esto puede pasar desapercibido utilizando XSS.</p>
+
+<p>Identificar las operaciones que sean especialmente peligrosas. Cuando el usuario desarrolla una operación peligrosa, envíe una solicitud de confirmación de forma separada para poder garantizar que el usuario tenga la intención de desarrollar esa operación.</p>
+
+<p>Usted tiene que tener en cuenta que esto puede pasar desapercibido utilizando XSS.</p>
+
+<p>Utilice el control de gestión de la sesión de ESAPI.</p>
+
+<p>Este control introduce un elemento para CSRF.</p>
+
+<p>No utilice el método GET para ninguna de las solicitudes que puedan desencadenar un cambio de estado.</p>
+
+<p>Fase: Implementación</p>
+
+<p>Revise que la solicitud se creó en la página esperada. Esto podría quebrar la funcionalidad auténtica, ya que los usuarios o los representantes puede ser que hayan desactivado el envío de Referer por motivos de privacidad.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alta</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (230 bytes)</summary>
+				
+				<pre><code>GET http://localhost/sitemap.xml HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(5)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(5)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Cookie No HttpOnly Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/SEC/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (264 bytes)</summary>
+				
+				<pre><code>GET http://localhost/SEC/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/SEC/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (368 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Set-Cookie: PHPSESSID=hbgjcopnelnbrmupte5a7ee4mr; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1968
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1968 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Login&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style1.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;form-box box&quot;&gt;
+
+      
+        &lt;header&gt;Login&lt;/header&gt;
+        &lt;hr&gt;
+        &lt;form action=&quot;#&quot; method=&quot;POST&quot;&gt;
+
+          &lt;div class=&quot;form-box&quot;&gt;
+
+
+            &lt;div class=&quot;input-container&quot;&gt;
+              &lt;i class=&quot;fa fa-envelope icon&quot;&gt;&lt;/i&gt;
+              &lt;input class=&quot;input-field&quot; type=&quot;email&quot; placeholder=&quot;Email Address&quot; name=&quot;email&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;input-container&quot;&gt;
+              &lt;i class=&quot;fa fa-lock icon&quot;&gt;&lt;/i&gt;
+              &lt;input class=&quot;input-field password&quot; type=&quot;password&quot; placeholder=&quot;Password&quot; name=&quot;password&quot;&gt;
+              &lt;i class=&quot;fa fa-eye toggle icon&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;remember&quot;&gt;
+              &lt;input type=&quot;checkbox&quot; class=&quot;check&quot; name=&quot;remember_me&quot;&gt;
+              &lt;label for=&quot;remember&quot;&gt;Remember me&lt;/label&gt;
+              &lt;span&gt;&lt;a href=&quot;forgot.php&quot;&gt;Forgot password&lt;/a&gt;&lt;/span&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+
+
+
+          &lt;input type=&quot;submit&quot; name=&quot;login&quot; id=&quot;submit&quot; value=&quot;Login&quot; class=&quot;button&quot;&gt;
+
+          &lt;div class=&quot;links&quot;&gt;
+            Don&#39;t have an account? &lt;a href=&quot;signup.php&quot;&gt;Signup Now&lt;/a&gt;
+          &lt;/div&gt;
+
+        &lt;/form&gt;
+      &lt;/div&gt;
+        &lt;/div&gt;
+  &lt;script&gt;
+    const toggle = document.querySelector(&quot;.toggle&quot;),
+      input = document.querySelector(&quot;.password&quot;);
+    toggle.addEventListener(&quot;click&quot;, () =&gt; {
+      if (input.type === &quot;password&quot;) {
+        input.type = &quot;text&quot;;
+        toggle.classList.replace(&quot;fa-eye-slash&quot;, &quot;fa-eye&quot;);
+      } else {
+        input.type = &quot;password&quot;;
+      }
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the HttpOnly flag is set for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Cookie sin el atributo SameSite</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/SEC/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (264 bytes)</summary>
+				
+				<pre><code>GET http://localhost/SEC/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/SEC/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (368 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Set-Cookie: PHPSESSID=hbgjcopnelnbrmupte5a7ee4mr; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1968
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1968 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Login&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style1.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;form-box box&quot;&gt;
+
+      
+        &lt;header&gt;Login&lt;/header&gt;
+        &lt;hr&gt;
+        &lt;form action=&quot;#&quot; method=&quot;POST&quot;&gt;
+
+          &lt;div class=&quot;form-box&quot;&gt;
+
+
+            &lt;div class=&quot;input-container&quot;&gt;
+              &lt;i class=&quot;fa fa-envelope icon&quot;&gt;&lt;/i&gt;
+              &lt;input class=&quot;input-field&quot; type=&quot;email&quot; placeholder=&quot;Email Address&quot; name=&quot;email&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;input-container&quot;&gt;
+              &lt;i class=&quot;fa fa-lock icon&quot;&gt;&lt;/i&gt;
+              &lt;input class=&quot;input-field password&quot; type=&quot;password&quot; placeholder=&quot;Password&quot; name=&quot;password&quot;&gt;
+              &lt;i class=&quot;fa fa-eye toggle icon&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;remember&quot;&gt;
+              &lt;input type=&quot;checkbox&quot; class=&quot;check&quot; name=&quot;remember_me&quot;&gt;
+              &lt;label for=&quot;remember&quot;&gt;Remember me&lt;/label&gt;
+              &lt;span&gt;&lt;a href=&quot;forgot.php&quot;&gt;Forgot password&lt;/a&gt;&lt;/span&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+
+
+
+          &lt;input type=&quot;submit&quot; name=&quot;login&quot; id=&quot;submit&quot; value=&quot;Login&quot; class=&quot;button&quot;&gt;
+
+          &lt;div class=&quot;links&quot;&gt;
+            Don&#39;t have an account? &lt;a href=&quot;signup.php&quot;&gt;Signup Now&lt;/a&gt;
+          &lt;/div&gt;
+
+        &lt;/form&gt;
+      &lt;/div&gt;
+        &lt;/div&gt;
+  &lt;script&gt;
+    const toggle = document.querySelector(&quot;.toggle&quot;),
+      input = document.querySelector(&quot;.password&quot;);
+    toggle.addEventListener(&quot;click&quot;, () =&gt; {
+      if (input.type === &quot;password&quot;) {
+        input.type = &quot;text&quot;;
+        toggle.classList.replace(&quot;fa-eye-slash&quot;, &quot;fa-eye&quot;);
+      } else {
+        input.type = &quot;password&quot;;
+      }
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese que el atributo SameSite está establecido como &#39;lax&#39; o idealmente &#39;strict&#39; para todas las cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/SEC/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">WSTG-v42-INFO-08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>El servidor de la web/aplicación está divulgando información mediante uno o más encabezados de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;. El acceso a tal información podría facilitarle a los atacantes la identificación de otros marcos/componentes de los que su aplicación web depende y las vulnerabilidades a las que pueden estar sujetos tales componentes.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (254 bytes)</summary>
+				
+				<pre><code>GET http://localhost/SEC/ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/SEC
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (201 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Content-Type: text/html; charset=UTF-8
+content-length: 15695
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (15695 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Homepage&lt;/title&gt;
+
+    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;
+        integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot; crossorigin=&quot;anonymous&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;!-- navbar section   --&gt;
+
+    &lt;header class=&quot;navbar-section&quot;&gt;
+        &lt;nav class=&quot;navbar navbar-expand-lg&quot;&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;bi bi-chat&quot;&gt;&lt;/i&gt; Brag Spot&lt;/a&gt;
+                &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot;
+                    aria-controls=&quot;navbarNav&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
+                    &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; aria-current=&quot;page&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#services&quot;&gt;services&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#about&quot;&gt;about us&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#projects&quot;&gt;projects&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#contact&quot;&gt;contact&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;login.php&quot;&gt;login&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;signup.php&quot;&gt;signup&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;!-- hero section  --&gt;
+
+    &lt;section id=&quot;home&quot; class=&quot;hero-section&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-4 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h1&gt;the digital service you really want&lt;/h1&gt;
+                    &lt;p&gt;We build effective strategies to help you reach customers and prospects across the entire web.
+                    &lt;/p&gt;
+                    &lt;button class=&quot;btn&quot;&gt;&lt;a href=&quot;#&quot;&gt;Estimate Project&lt;/a&gt;&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-8 col-md-12 col-sm-12&quot;&gt;
+                    &lt;img src=&quot;images/hero-image.png&quot; alt=&quot;&quot; class=&quot;img-fluid&quot;&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- services section  --&gt;
+
+    &lt;section class=&quot;services-section&quot; id=&quot;services&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 services&quot;&gt;
+
+                    &lt;div class=&quot;row row1&quot;&gt;
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/research.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Research&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;We build effective strategies to help you reach customers
+                                        and
+                                        prospects
+                                        across the entire.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/brand.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Branding&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;Brand identity represents the visual elements and assets
+                                        that
+                                        distinguish a brand.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;row row2&quot;&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/ux.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;UI/UX Design&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;UI/UX design services focus on creating intuitive &amp;
+                                        user-centric
+                                        interfaces for digital products.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/app-development.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Development&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;A concept is brought to life through the services various
+                                        stages, such
+                                        as planning, testing and deployment.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h3&gt;services&lt;/h3&gt;
+                    &lt;h1&gt;We can help you solve your problem through our service.&lt;/h1&gt;
+                    &lt;p&gt;We are a brand strategy &amp; digital design agency building brands that matter in culture with more
+                        than ten years of experience.&lt;/p&gt;
+                    &lt;button class=&quot;btn&quot;&gt;Explore Services&lt;/button&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- about section  --&gt;
+
+    &lt;section class=&quot;about-section&quot; id=&quot;about&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12&quot;&gt;
+                    &lt;img src=&quot;images/about.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h3&gt;who we are&lt;/h3&gt;
+                    &lt;h1&gt;Providing creative and technology services for growing brands.&lt;/h1&gt;
+
+                    &lt;p&gt;Our company specializes in research, brand identity design, UI/UX design, development and graphic
+                        design. To help our clients improve their business, we work with them all over the world.&lt;/p&gt;
+                    &lt;button&gt;learn more&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- project section  --&gt;
+
+    &lt;section class=&quot;project-section&quot; id=&quot;projects&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row text&quot;&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12&quot;&gt;
+                    &lt;h3&gt;our works&lt;/h3&gt;
+                    &lt;h1&gt;Our latest project&lt;/h1&gt;
+                    &lt;hr&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12&quot;&gt;
+                    &lt;p&gt;We build product close to our heart. We make your idea to really and make your dream successful
+                        with awesome experience.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row project&quot;&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project1.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;SaaS Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Development. Jan 19,2022&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project2.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;Travel Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;UI/UX Jun 29,2023&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project3.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;Travel Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;UI/UX Aug 9,2021&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project4.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;SaaS Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Development. May 25 ,2022&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- contact section  --&gt;
+
+    &lt;section class=&quot;contact-section&quot; id=&quot;contact&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+
+            &lt;div class=&quot;row gy-4&quot;&gt;
+
+                &lt;h1&gt;contact us&lt;/h1&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+
+                    &lt;div class=&quot;row gy-4&quot;&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-geo-alt&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Address&lt;/h3&gt;
+                                &lt;p&gt;A108 Adam Street,&lt;br&gt;New Delhi, 535022&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-telephone&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Call Us&lt;/h3&gt;
+                                &lt;p&gt;+91 9876545672&lt;br&gt;+91 8763456243&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-envelope&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Email Us&lt;/h3&gt;
+                                &lt;p&gt;bragspot@gmail.com&lt;br&gt;brag@gmail.com&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-clock&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Open Hours&lt;/h3&gt;
+                                &lt;p&gt;Monday - Friday&lt;br&gt;9:00AM - 05:00PM&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-6 form&quot;&gt;
+                    &lt;form action=&quot;contact.php&quot; method=&quot;POST&quot; class=&quot;php-email-form&quot;&gt;
+                        &lt;div class=&quot;row gy-4&quot;&gt;
+
+                            &lt;div class=&quot;col-md-6&quot;&gt;
+                                &lt;input type=&quot;text&quot; name=&quot;name&quot; class=&quot;form-control&quot; placeholder=&quot;Your Name&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-6 &quot;&gt;
+                                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; name=&quot;email&quot; placeholder=&quot;Your Email&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;subject&quot; placeholder=&quot;Subject&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12&quot;&gt;
+                                &lt;textarea class=&quot;form-control&quot; name=&quot;message&quot; rows=&quot;5&quot; placeholder=&quot;Message&quot;
+                                    required&gt;&lt;/textarea&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12 text-center&quot;&gt;
+                                &lt;button type=&quot;submit&quot; name=&quot;submit&quot;&gt;Send Message&lt;/button&gt;
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/form&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- footer section  --&gt;
+
+    &lt;footer&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-3 col-md-12 col-sm-12&quot;&gt;
+                    &lt;p class=&quot;logo&quot;&gt;&lt;i class=&quot;bi bi-chat&quot;&gt;&lt;/i&gt; Brag Spot&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12&quot;&gt;
+                    &lt;ul class=&quot;d-flex&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;services&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;projects&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;about us&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-2 col-md-12 col-sm-12&quot;&gt;
+                    &lt;p&gt;&amp;copy;2023_BragSpot&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-1 col-md-12 col-sm-12&quot;&gt;
+                    &lt;!-- back to top  --&gt;
+
+                    &lt;a href=&quot;#&quot; class=&quot;back-to-top d-flex align-items-center justify-content-center&quot;&gt;&lt;i
+                            class=&quot;bi bi-arrow-up-short&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/footer&gt;
+
+
+
+
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+        integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+        crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>X-Powered-By: PHP/8.0.30</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese que su servidor web, servidor de aplicación, equilibrador de carga, etc. está configurado para suprimir encabezados &#39;&#39;&#39;&#39;X-Powered-By&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Gran redirección detectada (posible fuga de información confidencial)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/SEC</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A04_2021-Insecure_Design/">OWASP_2021_A04</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>El servidor ha respondido con una redirección que parece proporcionar una respuesta larga. Esto puede indicar que aunque el servidor envió una redirección, también respondió con el contenido del cuerpo (que puede incluir detalles confidenciales, PII, etc.).</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Longitud del URI de la cabecera Location: 21 [http://localhost/SEC/].</p>
+
+<p>Tamaño de respuesta previsto: 321.</p>
+
+<p>Longitud del cuerpo de respuesta: 328.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (222 bytes)</summary>
+				
+				<pre><code>GET http://localhost/SEC HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (226 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 301 Moved Permanently
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+Location: http://localhost/SEC/
+Content-Length: 328
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (328 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;301 Moved Permanently&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Moved Permanently&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://localhost/SEC/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que no se filtre información confidencial a través de las respuestas de redirección. Las respuestas de redireccionamiento casi no deben tener contenido.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/SEC/css/style1.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (325 bytes)</summary>
+				
+				<pre><code>GET http://localhost/SEC/css/style1.css HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/SEC/signup.php
+Cookie: PHPSESSID=hbgjcopnelnbrmupte5a7ee4mr
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (253 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+Last-Modified: Wed, 17 Apr 2024 22:22:49 GMT
+ETag: &quot;e47-616524b74f14b&quot;
+Accept-Ranges: bytes
+Content-Length: 3655
+Content-Type: text/css
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3655 bytes)</summary>
+				
+				<pre><code>/* fonts  */
+
+@import url(&#39;https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap&#39;);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: &#39;Poppins&#39;, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 50, 0.7), rgba(0, 0, 50, 0.7)), url(&#39;../images/background.jpg&#39;);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.form-box {
+    width: 450px;
+    margin: 50px 10px;
+}
+
+.form-box header {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #2B547E;
+}
+
+.form-box hr {
+    background-color: #2B547E;
+    height: 5px;
+    width: 20%;
+    border: none;
+    margin: 5px auto;
+    outline: 0;
+    border-radius: 5px;
+}
+
+.input-container {
+    display: flex;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 15px;
+    background: transparent;
+    color: #555;
+    background-color: #f1f1f1;
+    min-width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-color: #f1f1f1;
+}
+
+.input-field:focus {
+    color: #2B547E;
+}
+
+.remember {
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.remember .check {
+    margin-right: 5px;
+}
+
+.remember span {
+    margin-left: 105px;
+}
+
+.remember span a {
+    text-decoration: none;
+    color: #2B547E;
+}
+
+.remember span a:hover {
+    font-weight: bold;
+}
+
+.btn {
+    height: 45px;
+    width: 80%;
+    background-color: #2B547E;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+
+.links {
+    margin: 25px;
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: #2B547E;
+}
+
+.links a:hover {
+    font-weight: bold;
+}
+
+
+/* home page  */
+
+.nav {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.right-links a {
+    padding: 0 10px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.main-box .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom {
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 840px) {
+    .main-box .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .top .box {
+        margin: 10px 10px;
+    }
+
+    .bottom {
+        margin-top: 0;
+    }
+}
+
+
+.message {
+    text-align: left;
+    /* background: #f9ede4; */
+    padding: 15px 0px;
+    /* border: 1px solid #699062; */
+    /* border-radius: 5px; */
+    /* margin-bottom: 10px; */
+    color: rebeccapurple;
+}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-0-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alta</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-12">Petición de Autenticación Identificada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/SEC/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La petición en cuestión se ha identificado como una petición de autenticación. El campo &quot;Otra información&quot; contiene un conjunto de líneas key=vvalue que identifican cualquier campo relevante. Si la solicitud está en un contexto que tiene un método de autenticación configurado como &quot;Detección automática&quot;, esta regla cambiará la autenticación para que coincida con la petición identificada.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>userParam=email</p>
+
+<p>userValue=zaproxy@example.com</p>
+
+<p>passwordParam=password</p>
+
+<p>referer=http://localhost/SEC/login.php</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (389 bytes)</summary>
+				
+				<pre><code>POST http://localhost/SEC/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/SEC/login.php
+content-length: 67
+Cookie: PHPSESSID=hbgjcopnelnbrmupte5a7ee4mr
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (67 bytes)</summary>
+				
+				<pre><code>email=zaproxy%40example.com&amp;password=ZAP&amp;remember_me=on&amp;login=Login</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (309 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 990
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (990 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Login&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style1.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;form-box box&quot;&gt;
+
+      &lt;div class=&#39;message&#39;&gt;
+                    &lt;p&gt;Wrong Email or Password&lt;/p&gt;
+                    &lt;/div&gt;&lt;br&gt;&lt;a href=&#39;login.php&#39;&gt;&lt;button class=&#39;btn&#39;&gt;Go Back&lt;/button&gt;&lt;/a&gt;  &lt;/div&gt;
+  &lt;script&gt;
+    const toggle = document.querySelector(&quot;.toggle&quot;),
+      input = document.querySelector(&quot;.password&quot;);
+    toggle.addEventListener(&quot;click&quot;, () =&gt; {
+      if (input.type === &quot;password&quot;) {
+        input.type = &quot;text&quot;;
+        toggle.classList.replace(&quot;fa-eye-slash&quot;, &quot;fa-eye&quot;);
+      } else {
+        input.type = &quot;password&quot;;
+      }
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>email</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>password</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Se trata de una alerta informativa y no de una vulnerabilidad, por lo que no hay nada que corregir.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-13">Respuesta de Gestión de Sesión Identificada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/SEC/signup.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Se ha identificado que la respuesta dada contiene un token de gestión de sesión. El campo &#39;Other Info&#39; contiene un conjunto de tokens de cabecera que pueden utilizarse en el método Header Based Session Management (gestión de sesión basado en cabecera). Si la petición se encuentra en un contexto que tiene un método Session Management establecido en &quot;Auto-Detect&quot;, esta regla cambiará la gestión de sesión para utilizar los tokens identificados.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:PHPSESSID</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (391 bytes)</summary>
+				
+				<pre><code>POST http://localhost/SEC/signup.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/SEC/signup.php
+content-length: 79
+Cookie: PHPSESSID=hbgjcopnelnbrmupte5a7ee4mr
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (79 bytes)</summary>
+				
+				<pre><code>username=ZAP&amp;email=zaproxy%40example.com&amp;password=ZAP&amp;cpass=ZAP&amp;register=Signup</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (309 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 132
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (132 bytes)</summary>
+				
+				<pre><code>&lt;div class=&#39;message&#39;&gt;&lt;p&gt;You are registered successfully!&lt;/p&gt;&lt;/div&gt;&lt;br&gt;&lt;a href=&#39;login.php&#39;&gt;&lt;button class=&#39;btn&#39;&gt;Login Now&lt;/button&gt;&lt;/a&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>hbgjcopnelnbrmupte5a7ee4mr</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Se trata de una alerta informativa y no de una vulnerabilidad, por lo que no hay nada que corregir.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-11">Modern Web Application</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/SEC</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (222 bytes)</summary>
+				
+				<pre><code>GET http://localhost/SEC HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (201 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Content-Type: text/html; charset=UTF-8
+content-length: 15695
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (15695 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Homepage&lt;/title&gt;
+
+    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;
+        integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot; crossorigin=&quot;anonymous&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;!-- navbar section   --&gt;
+
+    &lt;header class=&quot;navbar-section&quot;&gt;
+        &lt;nav class=&quot;navbar navbar-expand-lg&quot;&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;bi bi-chat&quot;&gt;&lt;/i&gt; Brag Spot&lt;/a&gt;
+                &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot;
+                    aria-controls=&quot;navbarNav&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
+                    &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; aria-current=&quot;page&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#services&quot;&gt;services&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#about&quot;&gt;about us&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#projects&quot;&gt;projects&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;#contact&quot;&gt;contact&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;login.php&quot;&gt;login&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link&quot; href=&quot;signup.php&quot;&gt;signup&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;!-- hero section  --&gt;
+
+    &lt;section id=&quot;home&quot; class=&quot;hero-section&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-4 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h1&gt;the digital service you really want&lt;/h1&gt;
+                    &lt;p&gt;We build effective strategies to help you reach customers and prospects across the entire web.
+                    &lt;/p&gt;
+                    &lt;button class=&quot;btn&quot;&gt;&lt;a href=&quot;#&quot;&gt;Estimate Project&lt;/a&gt;&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-8 col-md-12 col-sm-12&quot;&gt;
+                    &lt;img src=&quot;images/hero-image.png&quot; alt=&quot;&quot; class=&quot;img-fluid&quot;&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- services section  --&gt;
+
+    &lt;section class=&quot;services-section&quot; id=&quot;services&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 services&quot;&gt;
+
+                    &lt;div class=&quot;row row1&quot;&gt;
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/research.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Research&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;We build effective strategies to help you reach customers
+                                        and
+                                        prospects
+                                        across the entire.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/brand.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Branding&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;Brand identity represents the visual elements and assets
+                                        that
+                                        distinguish a brand.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;row row2&quot;&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/ux.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;UI/UX Design&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;UI/UX design services focus on creating intuitive &amp;
+                                        user-centric
+                                        interfaces for digital products.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;img src=&quot;images/app-development.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                                &lt;div class=&quot;card-body&quot;&gt;
+                                    &lt;h4 class=&quot;card-title&quot;&gt;Development&lt;/h4&gt;
+                                    &lt;p class=&quot;card-text&quot;&gt;A concept is brought to life through the services various
+                                        stages, such
+                                        as planning, testing and deployment.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h3&gt;services&lt;/h3&gt;
+                    &lt;h1&gt;We can help you solve your problem through our service.&lt;/h1&gt;
+                    &lt;p&gt;We are a brand strategy &amp; digital design agency building brands that matter in culture with more
+                        than ten years of experience.&lt;/p&gt;
+                    &lt;button class=&quot;btn&quot;&gt;Explore Services&lt;/button&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- about section  --&gt;
+
+    &lt;section class=&quot;about-section&quot; id=&quot;about&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12&quot;&gt;
+                    &lt;img src=&quot;images/about.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12 text-content&quot;&gt;
+                    &lt;h3&gt;who we are&lt;/h3&gt;
+                    &lt;h1&gt;Providing creative and technology services for growing brands.&lt;/h1&gt;
+
+                    &lt;p&gt;Our company specializes in research, brand identity design, UI/UX design, development and graphic
+                        design. To help our clients improve their business, we work with them all over the world.&lt;/p&gt;
+                    &lt;button&gt;learn more&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- project section  --&gt;
+
+    &lt;section class=&quot;project-section&quot; id=&quot;projects&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row text&quot;&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12&quot;&gt;
+                    &lt;h3&gt;our works&lt;/h3&gt;
+                    &lt;h1&gt;Our latest project&lt;/h1&gt;
+                    &lt;hr&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12&quot;&gt;
+                    &lt;p&gt;We build product close to our heart. We make your idea to really and make your dream successful
+                        with awesome experience.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row project&quot;&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project1.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;SaaS Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Development. Jan 19,2022&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project2.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;Travel Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;UI/UX Jun 29,2023&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project3.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;Travel Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;UI/UX Aug 9,2021&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-3 col-md-6 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img src=&quot;images/project4.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;h4 class=&quot;card-title&quot;&gt;SaaS Website&lt;/h4&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Development. May 25 ,2022&lt;/p&gt;
+                                &lt;button&gt;see project&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- contact section  --&gt;
+
+    &lt;section class=&quot;contact-section&quot; id=&quot;contact&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+
+            &lt;div class=&quot;row gy-4&quot;&gt;
+
+                &lt;h1&gt;contact us&lt;/h1&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+
+                    &lt;div class=&quot;row gy-4&quot;&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-geo-alt&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Address&lt;/h3&gt;
+                                &lt;p&gt;A108 Adam Street,&lt;br&gt;New Delhi, 535022&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-telephone&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Call Us&lt;/h3&gt;
+                                &lt;p&gt;+91 9876545672&lt;br&gt;+91 8763456243&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-envelope&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Email Us&lt;/h3&gt;
+                                &lt;p&gt;bragspot@gmail.com&lt;br&gt;brag@gmail.com&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;div class=&quot;info-box&quot;&gt;
+                                &lt;i class=&quot;bi bi-clock&quot;&gt;&lt;/i&gt;
+                                &lt;h3&gt;Open Hours&lt;/h3&gt;
+                                &lt;p&gt;Monday - Friday&lt;br&gt;9:00AM - 05:00PM&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-6 form&quot;&gt;
+                    &lt;form action=&quot;contact.php&quot; method=&quot;POST&quot; class=&quot;php-email-form&quot;&gt;
+                        &lt;div class=&quot;row gy-4&quot;&gt;
+
+                            &lt;div class=&quot;col-md-6&quot;&gt;
+                                &lt;input type=&quot;text&quot; name=&quot;name&quot; class=&quot;form-control&quot; placeholder=&quot;Your Name&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-6 &quot;&gt;
+                                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; name=&quot;email&quot; placeholder=&quot;Your Email&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;subject&quot; placeholder=&quot;Subject&quot; required&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12&quot;&gt;
+                                &lt;textarea class=&quot;form-control&quot; name=&quot;message&quot; rows=&quot;5&quot; placeholder=&quot;Message&quot;
+                                    required&gt;&lt;/textarea&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-md-12 text-center&quot;&gt;
+                                &lt;button type=&quot;submit&quot; name=&quot;submit&quot;&gt;Send Message&lt;/button&gt;
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/form&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- footer section  --&gt;
+
+    &lt;footer&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-3 col-md-12 col-sm-12&quot;&gt;
+                    &lt;p class=&quot;logo&quot;&gt;&lt;i class=&quot;bi bi-chat&quot;&gt;&lt;/i&gt; Brag Spot&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12&quot;&gt;
+                    &lt;ul class=&quot;d-flex&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;services&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;projects&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;about us&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-2 col-md-12 col-sm-12&quot;&gt;
+                    &lt;p&gt;&amp;copy;2023_BragSpot&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-lg-1 col-md-12 col-sm-12&quot;&gt;
+                    &lt;!-- back to top  --&gt;
+
+                    &lt;a href=&quot;#&quot; class=&quot;back-to-top d-flex align-items-center justify-content-center&quot;&gt;&lt;i
+                            class=&quot;bi bi-arrow-up-short&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/footer&gt;
+
+
+
+
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+        integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+        crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;bi bi-chat&quot;&gt;&lt;/i&gt; Brag Spot&lt;/a&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert and so no changes are required.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Baja</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">Amplia gama de Cookies</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/SEC/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Las Cookies pueden ser delimitadas por dominio o ruta. Esta comprobación solo se considera con ámbito de dominio. El ámbito de dominio aplicado a una cookie determina cuales dominios lo pueden acceder. Por ejemplo, una cookie puede ser delimitada estrictamente a un subdominio por ejemplo, www.nottrusted.com, o libremente delimitada a un dominio padre por ejemplo, nottrusted.com. En el último caso, cualquier subdominio de nottrusted.com puede acceder a la cookie. Las cookies libremente delimitadas son comunes en mega-aplicaciones como google.com y live.com. las cookies establecidas desde un subdominio como app.foo.bar son transmitidas solo al dominio del navegador. Sin embargo, las cookies delimitadas a un dominio de nivel de padre podría ser transmitida al padre, o cualquier subdominio del padre.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>El dominio de origen usado para comparaciones era:</p>
+
+<p>localhost</p>
+
+<p>PHPSESSID=hbgjcopnelnbrmupte5a7ee4mr</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (264 bytes)</summary>
+				
+				<pre><code>GET http://localhost/SEC/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/SEC/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (368 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Set-Cookie: PHPSESSID=hbgjcopnelnbrmupte5a7ee4mr; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1968
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1968 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Login&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style1.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;form-box box&quot;&gt;
+
+      
+        &lt;header&gt;Login&lt;/header&gt;
+        &lt;hr&gt;
+        &lt;form action=&quot;#&quot; method=&quot;POST&quot;&gt;
+
+          &lt;div class=&quot;form-box&quot;&gt;
+
+
+            &lt;div class=&quot;input-container&quot;&gt;
+              &lt;i class=&quot;fa fa-envelope icon&quot;&gt;&lt;/i&gt;
+              &lt;input class=&quot;input-field&quot; type=&quot;email&quot; placeholder=&quot;Email Address&quot; name=&quot;email&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;input-container&quot;&gt;
+              &lt;i class=&quot;fa fa-lock icon&quot;&gt;&lt;/i&gt;
+              &lt;input class=&quot;input-field password&quot; type=&quot;password&quot; placeholder=&quot;Password&quot; name=&quot;password&quot;&gt;
+              &lt;i class=&quot;fa fa-eye toggle icon&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;remember&quot;&gt;
+              &lt;input type=&quot;checkbox&quot; class=&quot;check&quot; name=&quot;remember_me&quot;&gt;
+              &lt;label for=&quot;remember&quot;&gt;Remember me&lt;/label&gt;
+              &lt;span&gt;&lt;a href=&quot;forgot.php&quot;&gt;Forgot password&lt;/a&gt;&lt;/span&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+
+
+
+          &lt;input type=&quot;submit&quot; name=&quot;login&quot; id=&quot;submit&quot; value=&quot;Login&quot; class=&quot;button&quot;&gt;
+
+          &lt;div class=&quot;links&quot;&gt;
+            Don&#39;t have an account? &lt;a href=&quot;signup.php&quot;&gt;Signup Now&lt;/a&gt;
+          &lt;/div&gt;
+
+        &lt;/form&gt;
+      &lt;/div&gt;
+        &lt;/div&gt;
+  &lt;script&gt;
+    const toggle = document.querySelector(&quot;.toggle&quot;),
+      input = document.querySelector(&quot;.password&quot;);
+    toggle.addEventListener(&quot;click&quot;, () =&gt; {
+      if (input.type === &quot;password&quot;) {
+        input.type = &quot;text&quot;;
+        toggle.classList.replace(&quot;fa-eye-slash&quot;, &quot;fa-eye&quot;);
+      } else {
+        input.type = &quot;password&quot;;
+      }
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Siempre delimitar las cookies a FQDN (Nombre de Dominio Completamente Calificado).</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-14">User Controllable HTML Element Attribute (Potential XSS)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/SEC/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p>
+
+<p></p>
+
+<p>http://localhost/SEC/login.php</p>
+
+<p></p>
+
+<p>appears to include user input in: </p>
+
+<p></p>
+
+<p>a(n) [a] tag [href] attribute </p>
+
+<p></p>
+
+<p>The user input found was:</p>
+
+<p>login=Login</p>
+
+<p></p>
+
+<p>The user-controlled value was:</p>
+
+<p>login.php</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (389 bytes)</summary>
+				
+				<pre><code>POST http://localhost/SEC/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/SEC/login.php
+content-length: 67
+Cookie: PHPSESSID=hbgjcopnelnbrmupte5a7ee4mr
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (67 bytes)</summary>
+				
+				<pre><code>email=zaproxy%40example.com&amp;password=ZAP&amp;remember_me=on&amp;login=Login</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (309 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Thu, 18 Apr 2024 04:08:32 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+X-Powered-By: PHP/8.0.30
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 990
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (990 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Login&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style1.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;form-box box&quot;&gt;
+
+      &lt;div class=&#39;message&#39;&gt;
+                    &lt;p&gt;Wrong Email or Password&lt;/p&gt;
+                    &lt;/div&gt;&lt;br&gt;&lt;a href=&#39;login.php&#39;&gt;&lt;button class=&#39;btn&#39;&gt;Go Back&lt;/button&gt;&lt;/a&gt;  &lt;/div&gt;
+  &lt;script&gt;
+    const toggle = document.querySelector(&quot;.toggle&quot;),
+      input = document.querySelector(&quot;.password&quot;);
+    toggle.addEventListener(&quot;click&quot;, () =&gt; {
+      if (input.type === &quot;password&quot;) {
+        input.type = &quot;text&quot;;
+        toggle.classList.replace(&quot;fa-eye-slash&quot;, &quot;fa-eye&quot;);
+      } else {
+        input.type = &quot;password&quot;;
+      }
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>login</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Inyección SQL</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									     <span>raised by an active scanner</span>
+									 (<span>plugin ID</span>: <a
+										href="https://www.zaproxy.org/docs/alerts/40018/">40018</a>)        
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Ausencia de Ttokens Anti-CSRF</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10202/">Ausencia de Ttokens Anti-CSRF</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>9</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://projects.webappsec.org/Cross-Site-Request-Forgery">http://projects.webappsec.org/Cross-Site-Request-Forgery</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/352.html">https://cwe.mitre.org/data/definitions/352.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Cabecera Content Security Policy (CSP) no configurada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Cabecera Content Security Policy (CSP) no configurada</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a></li>
+										<li><a
+											href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a></li>
+										<li><a
+											href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Falta de cabecera Anti-Clickjacking</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Cabecera Anti-Clickjacking</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Cookie sin el atributo SameSite</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie sin el atributo SameSite</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10037/">El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://blogs.msdn.com/b/varunm/Archive/2013/04/23/Remove-Unwanted-http-Response-headers.aspx http://www.troyhunt.com/2012/02/shhh-don &#39; t-deje-la-respuesta-headers.html">http://blogs.msdn.com/b/varunm/Archive/2013/04/23/Remove-Unwanted-http-Response-headers.aspx http://www.troyhunt.com/2012/02/shhh-don &#39; t-deje-la-respuesta-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Gran redirección detectada (posible fuga de información confidencial)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10044/">Gran redirección detectada (posible fuga de información confidencial)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/201.html">201</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://httpd.apache.org/docs/current/mod/core.html#servertokens">http://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007">http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</a></li>
+										<li><a
+											href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a></li>
+										<li><a
+											href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>Amplia gama de Cookies</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90033/">Amplia gama de Cookies</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/565.html">565</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/rfc6265#section-4.1">https://tools.ietf.org/html/rfc6265#section-4.1</a></li>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+										<li><a
+											href="http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies">http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-11">
+						<h4>Modern Web Application</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10109/">Modern Web Application</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-12">
+						<h4>Petición de Autenticación Identificada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10111/">Petición de Autenticación Identificada</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-13">
+						<h4>Respuesta de Gestión de Sesión Identificada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Respuesta de Gestión de Sesión Identificada</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-14">
+						<h4>User Controllable HTML Element Attribute (Potential XSS)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10031/">User Controllable HTML Element Attribute (Potential XSS)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/20.html">20</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute">http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
